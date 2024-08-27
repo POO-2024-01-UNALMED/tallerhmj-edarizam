@@ -1,6 +1,6 @@
 package futbol;
 
-public class Futbolista implements Comparable{
+public class Futbolista implements Comparable<Object> {
 	
 	//Attributes
 	private String nombre;
@@ -33,7 +33,7 @@ public class Futbolista implements Comparable{
 	} 
 	
 	public boolean equals(Futbolista futbolista) {
-		return (this.equals(futbolista)) ? true : false;
+		return this.hashCode() == futbolista.hashCode();
 	}
 	
 	public boolean jugarConLasManos() {
