@@ -33,7 +33,7 @@ public class Futbolista implements Comparable<Object> {
 	} 
 	
 	public boolean equals(Futbolista futbolista) {
-		return this.hashCode() == futbolista.hashCode();
+		return (this.equals((Object) futbolista));
 	}
 	
 	public boolean jugarConLasManos() {
